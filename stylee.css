@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Antique+Soft&display=swap');
+ 
+/*home section styling using id selector */
+#home {
+  display: flex;
+  max-height: 28rem;
+  flex-direction: column;
+  padding: 10rem 6rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+/*home section background pic styling using id selector */
+#home::before {
+  content: "";
+  position: absolute;
+  background: url(u.jpg) no-repeat center center/cover;
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+/*home section main header styling using id selector */
+#home h1 {
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  font-family: 'Bebas Neue', cursive;
+  /* font-family: 'Zen Antiqvue Soft', serif; */
+  font-family: helvetica;
+  font-size: 2.9rem;
+  color: white;
+  text-align: center;
+}
+/*home section paragraph styling using id selector */
+#home p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  font-family: verdana;
+}
+/* .heading{
+  margin-top: 2rem;
+} */
+#para{
+  margin-top: 1rem;
+    padding: 0px 1rem;
+}
+/*services section styling using id selector */
+#services {
+  display: flex;
+  margin: 2px;
+}
+
+#services .box {
+  border: 2px solid brown;
+  padding: 12px;
+  margin-top: 2px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+/*services section paragraph styling using id selector */
+#services .box p {
+  font-size: 0.8rem;
+}
+
+/*services section image styling using id selector */
+#services .box img {
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+
+/*for small headings in services boxes */
+.h-primary {
+  padding: 10px;
+  font-size: 1.9rem;
+  margin-top: 136px;
+}
+
+/*for sub headings for sections*/
+.h-secondary {
+  padding: 12px;
+  font-size: 1.3rem;
+}
+
+/*button styling using class selector */
+.btn {
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  margin: 5px 15px;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 19px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*button hover styling using class selector */
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-align: center;
+}
+.center {
+  text-align: center;
+  font-family: verdana;
+}
+
+.h-primarycenter {
+  text-align: center;
+  padding: 9px;
+  font-size: 2.1rem;
+}
+
+footer {
+  font-family:  helvetica;
+  display: flex;
+  overflow: hidden;
+  /* Hide overflow */
+  background-color: #2b2532;
+  /* Dark background color */
+}
+
+footer a {
+  float: left;
+  /* Make sure that the links stay side-by-side */
+  display: block;
+  /* Change the display to block, for responsive reasons (see below) */
+  color: white;
+  /* White text color */
+  text-align: center;
+  /* Center the text */
+  padding: 14px 20px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline */
+}
+.FAQ:hover {
+  background: #ffffff9e;
+  color: black;
+}
+.contactus:hover {
+  background-color: white;
+  color: black;
+}
+.terms:hover {
+  background-color: white;
+  color: black;
+}
+.privacy:hover {
+  background-color: white;
+  color: black;
+}
+.refund:hover {
+  background-color: white;
+  color: black;
+}
+.copy:hover {
+  background-color: white;
+  color: black;
+}
+
+/*870*/
+
+.flex-align-left {
+  margin-left: auto;
+}
+@media screen and (max-width: 870px) 
+{
+  footer,
+  .sm-handle,
+  #services {
+    flex-direction: column;
+    padding: 10px 0px;
+    overflow: hidden;
+  }
+  #home {
+    padding: 0px;
+  }
+  #services .box {
+    border: 2px solid brown;
+    padding: 10px;
+    margin-top: 2px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .flex-align-left {
+    margin-left: 0;
+  }
+  
+  #home p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+  }
+  #para{
+    margin-top: 0rem;
+      padding: 0px 1rem;
+      overflow: hidden;
+  }
+
+  /* .h-primary {
+    
+    padding:0px;
+    margin-top: 200px;
+} */
+
+
+}
+@media screen and (max-width: 2100px) and (min-width: 1900px)
+ {
+.h-primary {
+    
+  padding:0px;
+  /* margin-top: 464px; */
+  margin-top: 357px;}
+  #home p {
+    font-size: 2.2rem;}
+    #home h1{
+      font-size: 3.9rem;
+    }
+  #services .box p {
+    font-size: 1.8rem;
+}
+.h-secondary {
+
+  font-size: 2.3rem;
+}
+.btn{
+  font-size: 41px;
+}
+footer a{
+  font-size: 2.2rem;
+}
+}
+@media screen and (max-width: 1900px) and (min-width: 1000px)
+ {
+.h-primary {
+    
+  padding:0px;
+  
+  margin-top: 98px;
+}}
+@media screen and (max-width: 1000px) and (min-width: 900px)
+{
+  #home h1{
+    margin-top: 366px;
+  font-size: 2.9rem;
+}
+#home p {
+  font-size: 1.5rem;}
+.h-primary{
+  margin-top: 474px;
+}
+}
+@media screen and (max-width:900px) and (min-width: 800px) 
+{
+  .h-primary {
+    
+    padding:0px;
+    margin-top: 374px;
+}
+#home h1{
+  margin-top: 74px;
+  font-size: 3.1rem;
+}
+#home p{
+  font-size: 2rem;
+}
+}
+@media screen and (max-width:800px) and (min-width: 500px) 
+{
+  .h-primary {
+    
+    padding:0px;
+    margin-top: 300px;
+}
+#home h1{
+  font-size: 1.9rem;  
+}}
+@media screen and (max-width:500px) and (min-width: 450px) 
+{
+  .h-primary{
+    margin-top: 207px;
+  }
+  #home h1{
+    font-size:1.9rem ;
+  }
+}
+@media screen and (max-width:450px) and (min-width: 400px) 
+{
+  .h-primary{
+    margin-top: 237px;
+  }
+  #home h1{
+    margin-top: 95px;
+  }
+}
+@media screen and (max-width:400px) and (min-width: 350px) {
+  #logo{
+    line-height: 5rem;
+  }
+  .LOGO{
+    
+      display: inline;
+      margin: 0rem 3rem 3rem 0rem;
+      padding: 0rem 1rem;
+  }
+.h-primary {
+    
+  padding:0px;
+  margin-top: 200px;
+}
+#home h1{
+  font-size: 1.9rem;  
+  margin-top: 190px;
+
+}
+#home p{
+ 
+    font-size: 1.0rem;  
+
+}
+}
+@media screen and (max-width:350px) and (min-width: 300px) {
+  
+  
+  #home h1{
+    font-size: 1.9rem;
+    margin-top: 96px;
+  }
+
+.h-primary {
+  margin-top: 102px;}}
+
+
+ @media screen and (max-width:300px) and (min-width: 200px) 
+{
+  #logo{
+    line-height: 5rem;
+  }
+  .LOGO{
+    
+      display: inline;
+      margin: 0rem 3rem 3rem -2rem;
+      padding: 0rem 1rem;
+  }
+  .h-primary {
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-top: 150px;
+}
+#home h1{
+  font-size: 1.5rem;
+}
+#home p{
+  font-size: 0.7rem;
+}}
